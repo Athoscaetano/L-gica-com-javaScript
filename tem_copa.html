@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br> <br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    var copa = 1930;
+var limite = parseInt(prompt("informe um número limite"));
+while(copa <= limite){
+    mostra("tem copa! " + copa);
+    copa = copa + 4;
+}
+Mostra("ufa! esse foram os números definidos!");
+</script>

@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    function mostra(frase){
+        document.write(frase);
+    }
+    var loginCadastrado = "alura";
+    senhaCadastrado = "alura1321";
+    var tentativas = 3;
+    var tentativaFeita = 1;
+    while(tentativaFeita <= tentativas){
+var loginInformado = prompt("informe seu login");
+var senhaInformada = prompt("informe sua senha");
+    if(loginCadastrado == loginInformado && senhaCadastrado == senhaInformada){
+        alert("login realizado com sucesso");   
+tentativaFeita = tentativas;
+    } else{
+        if(tentativaFeita == 3){
+            alert("número de tentativas não permitido!");
+        } else {
+     alert("login ou senha inválido, tente novamente");
+tentativaFeita++;   
+        }
+    }
+    }
+        </script>

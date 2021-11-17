@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br> <br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    function sortear (n){
+return n = Math.round(Math.random() * 10);
+    }
+var numeroPensado = sortear();
+chute = parseInt(prompt("digite um número"));
+if(numeroPensado < chute){
+    mostra("esse número era maior que o que pensei " + numeroPensado);
+    }
+        if(numeroPensado > chute){
+        mostra("esse número foi menor do que pensei " + numeroPensado)
+}
+if(numeroPensado == chute){
+    mostra("você acertou era " + numeroPensado + "mesmo!"); 
+}
+</script>

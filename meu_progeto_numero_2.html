@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<script>
+        function pulaLinha(){
+                    document.write("<br> <br>");
+        }
+function varia(){
+        return Math.round(Math.random() * 5);
+}
+function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+}
+var player1 = prompt("por favor, Digite seu nome.");
+var player2 = prompt("por favor, digite seu nome.");
+round = parseInt(prompt("Por favor, Defina a quantidade de rodadas."));
+var contador = 1;
+var variador = varia();
+var pontos = 0;
+var pontos2 = 0;
+while(contador <= round){
+    var pergunta1 = parseInt(prompt( player1 + ", Por favor, digite um número, de 0 a 5. "));
+    variador
+    if(pergunta1 == variador){
+        mostra("parabéns, " + player1 + "! A resposta era essa mesma " + pergunta1);
+        mostra("você acaba de ganhar 3 pontos!");
+        pontos = pontos + 3;
+    }
+    if(pergunta1 != variador){
+        mostra("Infelizmente, " + player1 + "você errou! A resposta era " + variador);
+       }
+    var pergunta2 = parseInt(prompt(player2 + ", por favor, insira seu número, de 0 a 5."));
+    variador;
+    if(pergunta2 == variador){
+        mostra("parabéns, " + play2 + "! A resposta era essa mesmo. " + variador);
+        mostra("Meus parabéns! você acaba de ganhar 3 pontos!");
+        pontos2 = pontos2 + 3;
+    }
+    if(pergunta2 != variador){
+        mostra("infelizmente, " + player2 + "você errou! A resposta era " + variador);  
+}
+    contador++;
+}
+if(pontos < pontos2){
+    mostra("parabéns, " + player2 + "! Você ganhou o jogo.");
+}
+    if(pontos == pontos2){
+        mostra("vocês ficaram empatados!");
+    } else{
+        mostra("parabéns, " + player1 + "! Você ganhou o jogo.");
+    }
+
+</script>

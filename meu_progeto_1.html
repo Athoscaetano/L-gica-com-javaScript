@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br> <br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    function sortear(){
+        return Math.round(Math.random() * 3);
+    }
+    var tentativa = sortear();
+    var chute = parseInt(prompt("digite um número de 0 a 3 para chutar."));
+    if(tentativa == 0){
+        mostra("você chuta, mas a bola vai para fora do gol!");
+    }
+        if(tentativa == 1){
+            mostra("golaço! a bola sobe e cobre o goleiro, bem no ângulo!");
+        }
+        if(tentativa == 2){
+            mostra("Quase! A bola bate bem na trave!");
+        }
+            if(tentativa == 3){
+                mostra("defeza espetacular do goleiro! De ponte, realmente impressionante!");
+            }
+                </script>

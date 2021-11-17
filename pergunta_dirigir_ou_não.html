@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+document.write();
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    var idade = parseInt(prompt("qual sua idade?"));
+    temCarteira = prompt("você possui carteira, sim ou não?");
+    if(idade < 18 && temCarteira != "não"){
+        mostra("você não está abilitado a dirigir.");
+    }else{
+        mostra("você pode dirigir, está abilitado!");
+    }
+    
+    </script>

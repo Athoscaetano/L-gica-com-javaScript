@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br> <br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    totalFuncionarios = parseInt(prompt("quantos funcionários tem na sua empresa?"));
+    numero = 1;
+    salario = 0;
+    while(numero <= totalFuncionarios){
+        totalSalario = parseInt(prompt("Por favor, indique o salário dos funcionários"));
+     salario = salario + totalSalario;
+        numero++;
+    }
+    mostra("o total de salários é " + salario);    
+</script>
